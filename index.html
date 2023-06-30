@@ -626,7 +626,6 @@
                     for(let i=0;i<rollno.length;i++)
                     {
                         let c = rollno.charCodeAt(i);
-                        // console.log(c,i);
 
                         if(i>=2 && i<=4)
                         {
@@ -683,12 +682,9 @@
                         else
                         {
                             seterror("epw","*Password should contain atleast one uppercase letter, lowercase letter, digit and special character(@,#,$,%,&)!");
-                            // console.log("hey");
                             break;
                         }
                     }
-                
-                    // console.log(ul,ll,d,sc);
 
                     if(!ul || !ll || !d || !sc)
                     {

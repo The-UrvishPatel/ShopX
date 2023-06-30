@@ -547,8 +547,6 @@
             error_box.innerHTML = error;
             error_box.style.padding = "0px";
             error_box.style.margin = "0";
-
-            isokay = false;
         }
 
         function validate_form()
@@ -657,7 +655,6 @@
                     for(let i=0;i<rollno.length;i++)
                     {
                         let c = rollno.charCodeAt(i);
-                        console.log(c,i);
 
                         if(i>=2 && i<=4)
                         {
@@ -673,7 +670,7 @@
                 }
             }
 
-            if(okay==true)
+            if(isokay==true)
             {
                 alert("Order Done Successfully!");
             }
